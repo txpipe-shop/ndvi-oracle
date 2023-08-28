@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-button, .sidebar-button-active {
+    @apply
+      text-gray-800
+      inline-flex
+      items-center
+      gap-x-2
+      py-3
+      px-4
+      text-sm
+      text-left
+      font-medium
+      border
+      -mt-px
+      first:rounded-t-lg
+      first:mt-0
+      last:rounded-b-lg
+      hover:text-blue-600
+      focus:z-10
+      focus:outline-none
+      focus:ring-2
+      focus:ring-blue-600;
+  }
+
+  .sidebar-button-active {
+    @apply text-blue-600;
+  }
+
+  .sidebar-button-title {
+    @apply flex-1;
+  }
+
+  .sidebar-button-badge {
+    @apply
+      inline-flex
+      items-center
+      gap-1.5
+      py-1.5
+      px-3
+      rounded-md
+      text-xs
+      font-medium
+      bg-blue-100
+      text-blue-800;
+  }
+}
